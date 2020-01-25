@@ -1,0 +1,21 @@
+.message-container{
+    width: 100%;
+}
+
+.error{
+    border: 1px solid red;
+    color: purple;
+}
+
+.info{
+    border: 1px solid skyblue;
+    color: lime;
+}
+
+.error, .info{
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 0.4em;
+    padding: 5px;
+}

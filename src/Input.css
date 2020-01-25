@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.input-container {
+  height: 40px;
+  display: flex;
+  width: 80%;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+.icon {
+  width: 40px;
+  padding: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.input-field:focus {
+  border: 2px solid green;
+}

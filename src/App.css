@@ -1,5 +1,9 @@
-.App{
+.App, .menu, .body{
     width: 80%;
     margin: 20px 10%;
-    border: 1px solid black;
+}
+
+.menu, .body{
+    display: flex;
+    flex-wrap: wrap;
 }

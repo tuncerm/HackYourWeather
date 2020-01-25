@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+.btn{
+    width: 20%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px; 
+}
