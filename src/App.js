@@ -30,16 +30,20 @@ function App() {
     setSearch(e.target.value);
   }
 
+  function removeCity(cityID){
+    setCities(cities.filter(city=>city.id !== cityID));
+  }
+
   return (
     <div className="App">
       <div className="menu">
         <Input action={getSearch} value={search}/>
-        <Button action={getCity}/>
+        <Button text="Search" action={getCity} isDisabled={!search.length}/>
       </div>
       <hr/>
       <div className="body">
         {errors.length ? errors.map(error=><ShowMessage type="error" message={error}/>) : null}
-        {cities.length ? cities.map(city=><City key={city.id} city={city}/>): <ShowMessage message="Please search for a city!" type="info" />}
+        {cities.length ? cities.map((city, index)=><City key={city.id} city={city} remove={()=>removeCity(city.id)} />): <ShowMessage message="Please search for a city!" type="info" />}
       </div>
     </div>
   );
